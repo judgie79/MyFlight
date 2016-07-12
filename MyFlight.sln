@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFlightscope.Proxy", "MyFlightscope.Proxy\MyFlightscope.Proxy.csproj", "{AB876B11-D0EB-4DFE-BB0A-4328B995FCB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFlight.Lib", "MyFlight.Lib\MyFlight.Lib.csproj", "{CAF4A492-4245-4A74-873E-9E2F2DFF3726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFlightscope.Proxy.Tests", "MyFlightscope.Proxy.Tests\MyFlightscope.Proxy.Tests.csproj", "{3688E6AD-D8F8-4B45-B739-A613ED85E6B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFlight.Data", "MyFlight.Data\MyFlight.Data.csproj", "{051838FA-3CD3-4E11-9C3C-AAAAA1616539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFlight.Sync", "MyFlight.Sync\MyFlight.Sync.csproj", "{762368DA-9618-40DF-B776-C18181EAD7DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EAC93F96-F79D-469E-A885-8FC45E8E928F}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB876B11-D0EB-4DFE-BB0A-4328B995FCB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB876B11-D0EB-4DFE-BB0A-4328B995FCB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB876B11-D0EB-4DFE-BB0A-4328B995FCB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB876B11-D0EB-4DFE-BB0A-4328B995FCB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAF4A492-4245-4A74-873E-9E2F2DFF3726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF4A492-4245-4A74-873E-9E2F2DFF3726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF4A492-4245-4A74-873E-9E2F2DFF3726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF4A492-4245-4A74-873E-9E2F2DFF3726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3688E6AD-D8F8-4B45-B739-A613ED85E6B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3688E6AD-D8F8-4B45-B739-A613ED85E6B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3688E6AD-D8F8-4B45-B739-A613ED85E6B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3688E6AD-D8F8-4B45-B739-A613ED85E6B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{051838FA-3CD3-4E11-9C3C-AAAAA1616539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{051838FA-3CD3-4E11-9C3C-AAAAA1616539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{051838FA-3CD3-4E11-9C3C-AAAAA1616539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{051838FA-3CD3-4E11-9C3C-AAAAA1616539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762368DA-9618-40DF-B776-C18181EAD7DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762368DA-9618-40DF-B776-C18181EAD7DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762368DA-9618-40DF-B776-C18181EAD7DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762368DA-9618-40DF-B776-C18181EAD7DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

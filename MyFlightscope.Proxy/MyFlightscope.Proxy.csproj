@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB876B11-D0EB-4DFE-BB0A-4328B995FCB1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyFlightscope.Proxy</RootNamespace>
+    <AssemblyName>MyFlightscope.Proxy</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\Ball.cs" />
+    <Compile Include="DTO\BallForGolfBag.cs" />
+    <Compile Include="DTO\BallParameters.cs" />
+    <Compile Include="DTO\Club.cs" />
+    <Compile Include="DTO\ClubForGolfBag.cs" />
+    <Compile Include="DTO\ClubParameters.cs" />
+    <Compile Include="DTO\FlightscopeSession.cs" />
+    <Compile Include="DTO\Golfbag.cs" />
+    <Compile Include="DTO\LoadGolfbagsResult.cs" />
+    <Compile Include="DTO\LoadSessionResult.cs" />
+    <Compile Include="DTO\LoadSessionResultProxy.cs" />
+    <Compile Include="DTO\LoadSessionsResult.cs" />
+    <Compile Include="DTO\MyFlightDatetime.cs" />
+    <Compile Include="DTO\MyFlightParameters.cs" />
+    <Compile Include="DTO\Player.cs" />
+    <Compile Include="DTO\PlayerForSession.cs" />
+    <Compile Include="DTO\PlayerGolfbag.cs" />
+    <Compile Include="DTO\PlayerParameters.cs" />
+    <Compile Include="IMyFlightscopeLoader.cs" />
+    <Compile Include="IMyFlightscopeParser.cs" />
+    <Compile Include="MyFlightscopeLoader.cs" />
+    <Compile Include="MyFlightscopeParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DTO\SerializableDictionary.cs" />
+    <Compile Include="DTO\Session.cs" />
+    <Compile Include="DTO\SessionOverview.cs" />
+    <Compile Include="DTO\SessionParameters.cs" />
+    <Compile Include="DTO\SessionType.cs" />
+    <Compile Include="DTO\SkillsAssessmentSession.cs" />
+    <Compile Include="DTO\SkillsAssessmentTarget.cs" />
+    <Compile Include="DTO\SkillsAssessmentTargetParameters.cs" />
+    <Compile Include="DTO\SkillsAssessmentTemplate.cs" />
+    <Compile Include="DTO\SkillsAssessmentTemplateParameters.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyFlight.Lib\MyFlight.Lib.csproj">
+      <Project>{caf4a492-4245-4a74-873e-9e2f2dff3726}</Project>
+      <Name>MyFlight.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
